@@ -1,0 +1,27 @@
+# node
+**/node_modules/
+**/.next/
+**/out/
+**/.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# local data
+downloads/
+logs/
+state.json
+
+# mac/windows
+.DS_Store
+Thumbs.db

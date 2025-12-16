@@ -8,7 +8,18 @@ type Article = {
   title: string;
   created_at: string;
   excerpt: string;
+
+  published_year: number | null;
+  published_month: string | null;
+  keywords: string[];
 };
+
+function formatPublished(y: number | null, m: string | null) {
+  if (!y && !m) return null;
+  if (y && m) return `${y} / ${m}`;
+  if (y) return String(y);
+  return String(m);
+}
 
 function useDebouncedValue<T>(value: T, delayMs: number) {
   const [debounced, setDebounced] = useState(value);
@@ -206,13 +217,11 @@ export default function HomePage() {
 
       <ul className="space-y-3">
         {items.map((a) => {
-          const params = new URLSearchParams();
-          if (qTrim) params.set("q", qTrim);
-          if (keyword) params.set("kw", keyword);
+          const publishedText = formatPublished(a.published_year ?? null, a.published_month ?? null);
 
-          const href = params.toString()
-            ? `/articles/${a.id}?${params.toString()}`
-            : `/articles/${a.id}`;
+          const href = `/articles/${encodeURIComponent(String(a.id))}${
+            qTrim ? `?q=${encodeURIComponent(qTrim)}` : ""
+          }${keyword ? `${qTrim ? "&" : "?"}kw=${encodeURIComponent(keyword)}` : ""}`;
 
           return (
             <li key={a.id} className="border rounded p-4 space-y-2">
@@ -222,18 +231,29 @@ export default function HomePage() {
                     <HighlightedText text={a.title} query={q} />
                   </Link>
                 </h2>
-                <span className="text-xs opacity-70">
-                  {new Date(a.created_at).toLocaleString()}
-                </span>
+                <span className="text-xs opacity-70">{new Date(a.created_at).toLocaleString()}</span>
               </div>
+
+              {publishedText && <div className="text-xs opacity-70">Published: {publishedText}</div>}
 
               <p className="text-sm opacity-90 whitespace-pre-wrap">
                 <HighlightedText text={a.excerpt + (a.excerpt?.length >= 280 ? "…" : "")} query={q} />
               </p>
+
+              {a.keywords?.length > 0 && (
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {a.keywords.map((kw) => (
+                    <span key={kw} className="text-xs border rounded-full px-2 py-1 opacity-80">
+                      {kw}
+                    </span>
+                  ))}
+                </div>
+              )}
             </li>
           );
         })}
       </ul>
+
     </main>
   );
 }

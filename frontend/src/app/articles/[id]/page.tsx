@@ -202,6 +202,7 @@ export default function ArticlePage() {
               {publishedText && <span>Published: {publishedText}</span>}
               {data.article.has_pdf && <span>PDF: available</span>}
             </div>
+            
 
             {data.article.source_page_url && (
               <p className="text-xs">

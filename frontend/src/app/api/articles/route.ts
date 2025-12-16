@@ -86,6 +86,7 @@ export async function GET(req: Request) {
       .select("article_id")
       .in("keyword_id", kwIds);
 
+
     if (joinErr) {
       return NextResponse.json({ error: joinErr.message }, { status: 500 });
     }
@@ -104,6 +105,44 @@ export async function GET(req: Request) {
   }
 
   const { data, error } = await query;
+  // ✅ 取得した記事IDに紐づくタグ名（keywords）をまとめて取る
+  const articleIds = (data ?? []).map((a: any) => a.id);
+  const keywordsByArticle: Record<number, string[]> = {};
+
+  if (articleIds.length) {
+    const { data: linkRows, error: linkErr } = await supabase
+      .from("ccps_article_keywords")
+      .select("article_id,keyword_id")
+      .in("article_id", articleIds);
+
+    if (linkErr) return NextResponse.json({ error: linkErr.message }, { status: 500 });
+
+    const keywordIds = Array.from(new Set((linkRows ?? []).map((r: any) => r.keyword_id)));
+
+    if (keywordIds.length) {
+      const { data: kwRows, error: kwErr2 } = await supabase
+        .from("ccps_keywords")
+        .select("id,name")
+        .in("id", keywordIds);
+
+      if (kwErr2) return NextResponse.json({ error: kwErr2.message }, { status: 500 });
+
+      const nameById = new Map((kwRows ?? []).map((k: any) => [k.id, k.name]));
+
+      for (const r of linkRows ?? []) {
+        const name = nameById.get(r.keyword_id);
+        if (!name) continue;
+        (keywordsByArticle[r.article_id] ??= []).push(name);
+      }
+
+      // 重複排除 + 並びを安定化
+      for (const key of Object.keys(keywordsByArticle)) {
+        const id = Number(key);
+        keywordsByArticle[id] = Array.from(new Set(keywordsByArticle[id])).sort();
+      }
+    }
+  }
+
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
   const items = (data ?? []).map((a: any) => {
@@ -122,6 +161,7 @@ export async function GET(req: Request) {
       pdf_public_url,
       excerpt: buildExcerpt(a.content ?? "", q, 180),
       has_pdf: Boolean(pdf_public_url),
+      keywords: keywordsByArticle[a.id] ?? [],
     };
   });
 

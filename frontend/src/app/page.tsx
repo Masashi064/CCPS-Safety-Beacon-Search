@@ -266,7 +266,7 @@ export default function HomePage() {
             const ka = publishedKey(a.published_year ?? null, a.published_month ?? null);
 
             // 発行年月が同じ場合は created_at で安定ソート
-            if (kb !== ka) return kb - ka; // 古い→新しい
+            if (kb !== ka) return ka - kb; // 新しい→古い
             return b.id - a.id;
           })
           .map((a) => {

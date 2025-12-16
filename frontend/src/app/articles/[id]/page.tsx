@@ -258,19 +258,8 @@ export default function ArticlePage() {
                   Open PDF
                 </a>
               )}
-              {pdfEmbedUrl && (
-                <a className="hidden md:inline-flex border rounded px-3 py-2" href={`${pdfEmbedUrl}?download=1`} target="_blank" rel="noreferrer">
-                  Download PDF
-                </a>
-              )}
             </div>
-
-            {/* Mobile guidance */}
-            <div className="border rounded p-3 text-sm opacity-90">
-              <p className="font-semibold">PDF preview is disabled on mobile.</p>
-              <p className="opacity-80">Please use “View source page” to read the original.</p>
-            </div>
-
+            
             {/* Desktop embed */}
             {pdfEmbedUrl && showPdf && (
               <div className="hidden md:block w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">

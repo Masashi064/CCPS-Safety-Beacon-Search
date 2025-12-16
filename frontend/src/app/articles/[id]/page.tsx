@@ -98,29 +98,53 @@ export default function ArticlePage() {
       return;
     }
 
-    const idSafe = id;      // ← ここで string に確定
-    const qSafe = q ?? "";  // ← 万一 string|null でも潰す（保険）
+    const idSafe = id;
+    const qSafe = q ?? "";
 
     const controller = new AbortController();
 
     async function run() {
       setLoading(true);
       setErr(null);
+
       try {
         const url = qSafe
           ? `/api/articles/${encodeURIComponent(idSafe)}?q=${encodeURIComponent(qSafe)}`
           : `/api/articles/${encodeURIComponent(idSafe)}`;
 
         const res = await fetch(url, { signal: controller.signal });
-        // ...
+
+        const text = await res.text();
+        let json: any = null;
+        try {
+          json = text ? JSON.parse(text) : null;
+        } catch {}
+
+        if (!res.ok) {
+          const msg =
+            json?.error ??
+            `HTTP ${res.status} ${res.statusText}: ${text.slice(0, 200) || "(empty response)"}`;
+          throw new Error(msg);
+        }
+        if (!json) throw new Error("API returned empty/non-JSON response.");
+
+        setData(json);
+      } catch (e: any) {
+        // ✅ これが肝：abort は「正常動作」なので無視
+        if (e?.name === "AbortError") return;
+        setErr(e?.message ?? "Unknown error");
       } finally {
         setLoading(false);
       }
     }
 
-    run();
-    return () => controller.abort();
+    void run();
+
+    return () => {
+      if (!controller.signal.aborted) controller.abort();
+    };
   }, [id, q]);
+
 
 
   const backHref = q ? `/?q=${encodeURIComponent(q)}` : "/";

@@ -241,19 +241,61 @@ export default function ArticlePage() {
             )}
           </header>
 
-          {data.article.pdf_public_url && showPdf && (
+          {data.article.pdf_public_url && (
             <section className="space-y-2">
-              <h2 className="text-sm font-semibold opacity-80">PDF</h2>
+              <div className="flex items-center justify-between gap-2">
+                <h2 className="text-sm font-semibold opacity-80">PDF</h2>
 
-              <div className="w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
-                <iframe
-                  title="PDF Viewer"
-                  src={`${data.article.pdf_public_url}#view=Fit`}
-                  className="w-full h-full"
-                />
+                <button
+                  type="button"
+                  className="text-xs border rounded px-2 py-1 opacity-80 hover:opacity-100"
+                  onClick={() => setShowPdf((v) => !v)}
+                >
+                  {showPdf ? "Hide" : "Show"}
+                </button>
               </div>
+
+              {/* ✅ モバイルでも確実に使える導線 */}
+              <div className="flex flex-wrap gap-2">
+                <a
+                  className="text-sm border rounded px-3 py-2 opacity-90 hover:opacity-100"
+                  href={data.article.pdf_public_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open PDF
+                </a>
+
+                {/* download は端末/ブラウザによっては効かないけど害はない */}
+                <a
+                  className="text-sm border rounded px-3 py-2 opacity-70 hover:opacity-100"
+                  href={data.article.pdf_public_url}
+                  download
+                >
+                  Download
+                </a>
+              </div>
+
+              {showPdf && (
+                <>
+                  {/* ✅ PCだけ埋め込みプレビュー（md以上） */}
+                  <div className="hidden md:block w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
+                    <iframe
+                      title="PDF Viewer"
+                      src={`${data.article.pdf_public_url}#view=Fit`}
+                      className="w-full h-full"
+                    />
+                  </div>
+
+                  {/* ✅ モバイルは説明だけ */}
+                  <div className="md:hidden text-sm opacity-80">
+                    モバイルではPDFの埋め込み表示ができない端末があるため、上の「Open PDF」から開いてください。
+                  </div>
+                </>
+              )}
             </section>
           )}
+
 
           {q && (
             <div className="border rounded p-3 text-sm opacity-90 whitespace-pre-wrap">

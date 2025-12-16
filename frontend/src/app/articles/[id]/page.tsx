@@ -98,35 +98,21 @@ export default function ArticlePage() {
       return;
     }
 
+    const idSafe = id;      // ← ここで string に確定
+    const qSafe = q ?? "";  // ← 万一 string|null でも潰す（保険）
+
     const controller = new AbortController();
 
     async function run() {
       setLoading(true);
       setErr(null);
       try {
-        const url = q
-          ? `/api/articles/${encodeURIComponent(id)}?q=${encodeURIComponent(q)}`
-          : `/api/articles/${encodeURIComponent(id)}`;
+        const url = qSafe
+          ? `/api/articles/${encodeURIComponent(idSafe)}?q=${encodeURIComponent(qSafe)}`
+          : `/api/articles/${encodeURIComponent(idSafe)}`;
 
         const res = await fetch(url, { signal: controller.signal });
-
-        const text = await res.text();
-        let json: any = null;
-        try {
-          json = text ? JSON.parse(text) : null;
-        } catch {}
-
-        if (!res.ok) {
-          const msg =
-            json?.error ??
-            `HTTP ${res.status} ${res.statusText}: ${text.slice(0, 200) || "(empty response)"}`;
-          throw new Error(msg);
-        }
-        if (!json) throw new Error("API returned empty/non-JSON response.");
-
-        setData(json);
-      } catch (e: any) {
-        if (e?.name !== "AbortError") setErr(e?.message ?? "Unknown error");
+        // ...
       } finally {
         setLoading(false);
       }
@@ -135,6 +121,7 @@ export default function ArticlePage() {
     run();
     return () => controller.abort();
   }, [id, q]);
+
 
   const backHref = q ? `/?q=${encodeURIComponent(q)}` : "/";
 

@@ -21,6 +21,50 @@ function formatPublished(y: number | null, m: string | null) {
   return String(m);
 }
 
+function monthToNumber(m: unknown) {
+  if (m == null) return 0;
+
+  // number の場合（1〜12想定）
+  if (typeof m === "number") {
+    const n = Math.floor(m);
+    return n >= 1 && n <= 12 ? n : 0;
+  }
+
+  // string の場合（"december" / "12" / "Dec" など）
+  const s = String(m).trim().toLowerCase();
+  if (!s) return 0;
+
+  const asNum = Number(s);
+  if (Number.isFinite(asNum)) {
+    const n = Math.floor(asNum);
+    return n >= 1 && n <= 12 ? n : 0;
+  }
+
+  const map: Record<string, number> = {
+    jan: 1, january: 1,
+    feb: 2, february: 2,
+    mar: 3, march: 3,
+    apr: 4, april: 4,
+    may: 5,
+    jun: 6, june: 6,
+    jul: 7, july: 7,
+    aug: 8, august: 8,
+    sep: 9, sept: 9, september: 9,
+    oct: 10, october: 10,
+    nov: 11, november: 11,
+    dec: 12, december: 12,
+  };
+
+  return map[s] ?? 0;
+}
+
+function publishedKey(y: number | null, m: string | null) {
+  const yy = y ?? 0;
+  const mm = monthToNumber(m);
+  return yy * 100 + mm; // 例: 202512
+}
+
+
 function useDebouncedValue<T>(value: T, delayMs: number) {
   const [debounced, setDebounced] = useState(value);
 
@@ -216,44 +260,68 @@ export default function HomePage() {
       {error && <p className="text-red-600">Error: {error}</p>}
 
       <ul className="space-y-3">
-        {items.map((a) => {
-          const publishedText = formatPublished(a.published_year ?? null, a.published_month ?? null);
+        {[...items]
+          .sort((a, b) => {
+            const kb = publishedKey(b.published_year ?? null, b.published_month ?? null);
+            const ka = publishedKey(a.published_year ?? null, a.published_month ?? null);
 
-          const href = `/articles/${encodeURIComponent(String(a.id))}${
-            qTrim ? `?q=${encodeURIComponent(qTrim)}` : ""
-          }${keyword ? `${qTrim ? "&" : "?"}kw=${encodeURIComponent(keyword)}` : ""}`;
+            // 発行年月が同じ場合は created_at で安定ソート
+            if (kb !== ka) return ka - kb; // 新しい→古い（降順）
+            return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+          })
+          .map((a) => {
+            const publishedText = formatPublished(
+              a.published_year ?? null,
+              a.published_month ?? null
+            );
 
-          return (
-            <li key={a.id} className="border rounded p-4 space-y-2">
-              <div className="flex items-baseline justify-between gap-4">
-                <h2 className="font-semibold">
-                  <Link className="underline decoration-transparent hover:decoration-inherit" href={href}>
-                    <HighlightedText text={a.title} query={q} />
-                  </Link>
-                </h2>
-                <span className="text-xs opacity-70">{new Date(a.created_at).toLocaleString()}</span>
-              </div>
+            const href = q
+              ? `/articles/${a.id}?q=${encodeURIComponent(q)}`
+              : `/articles/${a.id}`;
 
-              {publishedText && <div className="text-xs opacity-70">Published: {publishedText}</div>}
-
-              <p className="text-sm opacity-90 whitespace-pre-wrap">
-                <HighlightedText text={a.excerpt + (a.excerpt?.length >= 280 ? "…" : "")} query={q} />
-              </p>
-
-              {a.keywords?.length > 0 && (
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {a.keywords.map((kw) => (
-                    <span key={kw} className="text-xs border rounded-full px-2 py-1 opacity-80">
-                      {kw}
-                    </span>
-                  ))}
+            return (
+              <li key={a.id} className="border rounded p-4 space-y-2">
+                <div className="flex items-baseline justify-between gap-4">
+                  <h2 className="font-semibold">
+                    <Link
+                      className="underline decoration-transparent hover:decoration-inherit"
+                      href={href}
+                    >
+                      <HighlightedText text={a.title} query={q} />
+                    </Link>
+                  </h2>
+                  <span className="text-xs opacity-70">
+                    {new Date(a.created_at).toLocaleString()}
+                  </span>
                 </div>
-              )}
-            </li>
-          );
-        })}
-      </ul>
 
+                {publishedText && (
+                  <div className="text-xs opacity-70">Published: {publishedText}</div>
+                )}
+
+                <p className="text-sm opacity-90 whitespace-pre-wrap">
+                  <HighlightedText
+                    text={a.excerpt + (a.excerpt?.length >= 280 ? "…" : "")}
+                    query={q}
+                  />
+                </p>
+
+                {a.keywords?.length > 0 && (
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    {a.keywords.map((kw) => (
+                      <span
+                        key={kw}
+                        className="text-xs border rounded-full px-2 py-1 opacity-80"
+                      >
+                        {kw}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </li>
+            );
+          })}
+      </ul>
     </main>
   );
 }

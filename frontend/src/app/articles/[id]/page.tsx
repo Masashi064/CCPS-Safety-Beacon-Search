@@ -91,16 +91,6 @@ export default function ArticlePage() {
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [showPdf, setShowPdf] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    const apply = () => setIsMobile(mq.matches);
-    apply();
-    mq.addEventListener?.("change", apply);
-    return () => mq.removeEventListener?.("change", apply);
-  }, []);
-
 
   useEffect(() => {
     if (!id) {
@@ -276,19 +266,18 @@ export default function ArticlePage() {
             </div>
 
             {/* Mobile guidance */}
-            {isMobile && (
-              <div className="border rounded p-3 text-sm opacity-90">
-                <p className="font-semibold">PDF preview is disabled on mobile.</p>
-                <p className="opacity-80">Please use “View source page” to read the original.</p>
-              </div>
-            )}
+            <div className="border rounded p-3 text-sm opacity-90">
+              <p className="font-semibold">PDF preview is disabled on mobile.</p>
+              <p className="opacity-80">Please use “View source page” to read the original.</p>
+            </div>
 
             {/* Desktop embed */}
-            {!isMobile && pdfEmbedUrl && showPdf && (
-              <div className="w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
+            {pdfEmbedUrl && showPdf && (
+              <div className="hidden md:block w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
                 <iframe title="PDF Viewer" src={pdfEmbedUrl} className="w-full h-full" />
               </div>
             )}
+
           </section>
 
           <article className="prose prose-invert max-w-none">

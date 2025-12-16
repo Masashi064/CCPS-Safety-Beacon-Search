@@ -91,6 +91,16 @@ export default function ArticlePage() {
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [showPdf, setShowPdf] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    const apply = () => setIsMobile(mq.matches);
+    apply();
+    mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
+  }, []);
+
 
   useEffect(() => {
     if (!id) {
@@ -160,6 +170,11 @@ export default function ArticlePage() {
       : null;
 
   const publishedText = data ? formatPublished(data.article.published_year, data.article.published_month) : null;
+  const sourceUrl = data?.article.source_page_url ?? null;
+  const pdfPublicUrl = data?.article.pdf_public_url ?? null;
+
+  // PCで埋め込み表示する用（自サイトのAPI経由にする想定）
+  const pdfEmbedUrl = data?.article.has_pdf ? `/api/articles/${data.article.id}/pdf` : null;
 
   return (
     <main className="max-w-4xl mx-auto p-6 space-y-6">
@@ -191,123 +206,97 @@ export default function ArticlePage() {
       {err && <p className="text-red-600">Error: {err}</p>}
 
       {data && (
-        <article className="border rounded p-5 space-y-4">
-          <header className="space-y-2">
-            <h1 className="text-xl font-bold">
-              <HighlightedText text={data.article.title} query={q} />
-            </h1>
+        <div className="space-y-4">
+          <h1 className="text-2xl font-bold">{data.article.title}</h1>
 
-            <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs opacity-70">
-              <span>{new Date(data.article.created_at).toLocaleString()}</span>
-              {publishedText && <span>Published: {publishedText}</span>}
-              {data.article.has_pdf && <span>PDF: available</span>}
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs opacity-70">
+            <span>{new Date(data.article.created_at).toLocaleString()}</span>
+            {publishedText && <span>Published: {publishedText}</span>}
+            {data.article.has_pdf && <span>PDF: available</span>}
+          </div>
+
+          {data.article.source_page_url && (
+            <div className="text-sm">
+              Source page:{" "}
+              <a
+                className="underline opacity-80 hover:opacity-100"
+                href={data.article.source_page_url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                open
+              </a>
             </div>
-            
+          )}
 
-            {data.article.source_page_url && (
-              <p className="text-xs">
-                Source page:{" "}
-                <a
-                  className="underline opacity-80 hover:opacity-100"
-                  href={data.article.source_page_url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  open
-                </a>
-              </p>
-            )}
+          {data.article.keywords?.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {data.article.keywords.map((kw) => (
+                <span key={kw} className="text-xs border rounded-full px-2 py-1 opacity-80">
+                  {kw}
+                </span>
+              ))}
+            </div>
+          )}
+         
+          {/* Attachments */}
+          <section className="space-y-2 pt-4">
+            <div className="flex items-center justify-between gap-2">
+              <h2 className="text-sm font-semibold opacity-80">Attachments</h2>
 
-            {data.article.keywords?.length > 0 && (
-              <div className="flex flex-wrap gap-2 pt-1">
-                {data.article.keywords.map((kw) => (
-                  <Link
-                    key={kw}
-                    href={`/?q=${encodeURIComponent(kw)}`}
-                    className="text-xs border rounded-full px-2 py-1 opacity-80 hover:opacity-100"
-                    title="Search this keyword"
-                  >
-                    {kw}
-                  </Link>
-                ))}
-              </div>
-            )}
-
-
-            {q && (
-              <p className="text-sm opacity-80">
-                Query: <span className="font-mono">{q}</span>
-              </p>
-            )}
-          </header>
-
-          {data.article.pdf_public_url && (
-            <section className="space-y-2">
-              <div className="flex items-center justify-between gap-2">
-                <h2 className="text-sm font-semibold opacity-80">PDF</h2>
-
+              {pdfEmbedUrl && (
                 <button
                   type="button"
-                  className="text-xs border rounded px-2 py-1 opacity-80 hover:opacity-100"
+                  className="hidden md:inline-flex text-xs border rounded px-2 py-1 opacity-80 hover:opacity-100"
                   onClick={() => setShowPdf((v) => !v)}
                 >
-                  {showPdf ? "Hide" : "Show"}
+                  {showPdf ? "Hide preview" : "Show preview"}
                 </button>
-              </div>
+              )}
+            </div>
 
-              {/* ✅ モバイルでも確実に使える導線 */}
-              <div className="flex flex-wrap gap-2">
-                <a
-                  className="text-sm border rounded px-3 py-2 opacity-90 hover:opacity-100"
-                  href={data.article.pdf_public_url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+            <div className="flex flex-wrap gap-2">
+              {sourceUrl && (
+                <a className="border rounded px-3 py-2" href={sourceUrl} target="_blank" rel="noreferrer">
+                  View source page
+                </a>
+              )}
+
+              {/* PC convenience */}
+              {pdfPublicUrl && (
+                <a className="hidden md:inline-flex border rounded px-3 py-2" href={pdfPublicUrl} target="_blank" rel="noreferrer">
                   Open PDF
                 </a>
-
-                {/* download は端末/ブラウザによっては効かないけど害はない */}
-                <a
-                  className="text-sm border rounded px-3 py-2 opacity-70 hover:opacity-100"
-                  href={data.article.pdf_public_url}
-                  download
-                >
-                  Download
-                </a>
-              </div>
-
-              {showPdf && (
-                <>
-                  {/* ✅ PCだけ埋め込みプレビュー（md以上） */}
-                  <div className="hidden md:block w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
-                    <iframe
-                      title="PDF Viewer"
-                      src={`${data.article.pdf_public_url}#view=Fit`}
-                      className="w-full h-full"
-                    />
-                  </div>
-
-                  {/* ✅ モバイルは説明だけ */}
-                  <div className="md:hidden text-sm opacity-80">
-                    モバイルではPDFの埋め込み表示ができない端末があるため、上の「Open PDF」から開いてください。
-                  </div>
-                </>
               )}
-            </section>
-          )}
-
-
-          {q && (
-            <div className="border rounded p-3 text-sm opacity-90 whitespace-pre-wrap">
-              <HighlightedText text={data.article.excerpt} query={q} />
+              {pdfEmbedUrl && (
+                <a className="hidden md:inline-flex border rounded px-3 py-2" href={`${pdfEmbedUrl}?download=1`} target="_blank" rel="noreferrer">
+                  Download PDF
+                </a>
+              )}
             </div>
-          )}
 
-          <div className="text-sm whitespace-pre-wrap leading-6">
-            <HighlightedText text={data.article.content} query={q} />
-          </div>
-        </article>
+            {/* Mobile guidance */}
+            {isMobile && (
+              <div className="border rounded p-3 text-sm opacity-90">
+                <p className="font-semibold">PDF preview is disabled on mobile.</p>
+                <p className="opacity-80">Please use “View source page” to read the original.</p>
+              </div>
+            )}
+
+            {/* Desktop embed */}
+            {!isMobile && pdfEmbedUrl && showPdf && (
+              <div className="w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
+                <iframe title="PDF Viewer" src={pdfEmbedUrl} className="w-full h-full" />
+              </div>
+            )}
+          </section>
+
+          <article className="prose prose-invert max-w-none">
+            <pre className="whitespace-pre-wrap text-sm">{data.article.content}</pre>
+          </article>
+        </div>
       )}
+
     </main>
   );
 }

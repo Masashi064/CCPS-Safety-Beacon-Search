@@ -111,9 +111,13 @@ export default function ArticlePage() {
       setErr(null);
 
       try {
-        const url = q
-          ? `/api/articles/${encodeURIComponent(id)}?q=${encodeURIComponent(q)}`
-          : `/api/articles/${encodeURIComponent(id)}`;
+        const idSafe = String(id);
+        const qSafe = (q ?? "").trim();
+
+        const url = qSafe.length
+          ? `/api/articles/${encodeURIComponent(idSafe)}?q=${encodeURIComponent(qSafe)}`
+          : `/api/articles/${encodeURIComponent(idSafe)}`;
+
 
         const res = await fetch(url, { signal: controller.signal });
 

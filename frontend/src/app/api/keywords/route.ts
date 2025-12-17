@@ -7,8 +7,13 @@ export async function GET() {
     .select("name")
     .order("name", { ascending: true });
 
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  if (error) {
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
 
-  const keywords = (data ?? []).map((r: any) => r.name).filter(Boolean);
+  const keywords = (data ?? [])
+    .map((r: any) => r.name)
+    .filter((v: any) => typeof v === "string" && v.length > 0);
+
   return NextResponse.json({ keywords });
 }

@@ -2,6 +2,220 @@
   "archives_url": "https://ccps.aiche.org/resources/process-safety-beacon/archives",
   "language_id": "9306",
   "issue2keywords": {
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/september/english": [
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Hot work permit",
+      "Maintenance",
+      "Permits",
+      "Tank truck"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/december/english": [
+      "Emergency Response",
+      "Fire",
+      "Flammable Liquids",
+      "Management of Change",
+      "Operating Procedures",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/september/english": [
+      "Employee Participation",
+      "Fire",
+      "Flammable Liquids",
+      "Management of Change",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Overflow",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/september/english": [
+      "Fire",
+      "Flammable Liquids",
+      "Human Factors",
+      "Instrumentation",
+      "Leaks and Spills",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Overflow",
+      "PHA",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/august/english": [
+      "Explosion",
+      "Flammable Liquids",
+      "Hot work permit",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/february/english": [
+      "Bonding and Grounding",
+      "Drums",
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Flexible Connections",
+      "Leaks and Spills",
+      "Pump",
+      "Static Electricity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/november/english": [
+      "Explosion",
+      "Flammable Liquids",
+      "Operating Procedures"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/march/english": [
+      "Combustible Liquid",
+      "Explosion",
+      "Flammable Liquids",
+      "Incident Investigation",
+      "Laboratory Incidents",
+      "Oxygen",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/september/english": [
+      "Chemical Exposure",
+      "Flammable Liquids",
+      "Static Electricity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2001/november/english": [
+      "Explosion",
+      "Flammable Liquids",
+      "PHA",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/august/english": [
+      "Construction",
+      "Employee Participation",
+      "Fire",
+      "Flammable Gas",
+      "Flammable Liquids",
+      "Hot work permit",
+      "Maintenance",
+      "Permits"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/august/english": [
+      "Bonding and Grounding",
+      "Combustible Liquid",
+      "Drums",
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Flexible Connections",
+      "Mechanical Integrity",
+      "Static Electricity",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/july/english": [
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Flammable Liquids",
+      "Lockout Tagout",
+      "Maintenance",
+      "Operating Procedures",
+      "Permits",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/november/english": [
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Laboratory Incidents"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/november/english": [
+      "Flammable Liquids",
+      "Maintenance",
+      "Management of Change",
+      "Operating Procedures",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/july/english": [
+      "Emergency Response",
+      "Employee Participation",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Flammable Liquids",
+      "Maintenance",
+      "Operating Procedures",
+      "Pump"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/october/english": [
+      "Fire",
+      "Flammable Liquids",
+      "Leaks and Spills",
+      "Operating Procedures",
+      "Overflow",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/april/english": [
+      "Emergency Response",
+      "Employee Participation",
+      "Fire",
+      "Flammable Gas",
+      "Flammable Liquids",
+      "Security",
+      "Training",
+      "Weather"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/january/english": [
+      "Explosion",
+      "Flammable Gas",
+      "Flammable Liquids",
+      "Vapor Cloud Explosion"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/november/english": [
+      "Employee Participation",
+      "Fire",
+      "Flammable Gas",
+      "Flammable Liquids",
+      "Instrumentation",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Nitrogen",
+      "Physical Overpressurization"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/june/english": [
+      "Fire",
+      "Flammable Liquids",
+      "Human Factors",
+      "Leaks and Spills",
+      "Management of Change",
+      "Mechanical Integrity",
+      "Piping",
+      "Pump"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/july/english": [
+      "Fire",
+      "Flammable Liquids",
+      "Leaks and Spills",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "PHA",
+      "Pump"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/february/english": [
+      "Combustible Liquid",
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Instrumentation",
+      "Interlocks",
+      "Leaks and Spills",
+      "Overflow",
+      "Safety Instrumented Systems (SIS)",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/march/english": [
+      "Construction",
+      "Employee Participation",
+      "Explosion",
+      "Flammable Liquids",
+      "Process Safety",
+      "Safety Culture",
+      "Vapor Cloud Explosion"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/july/english": [
       "Dust explosion",
       "Explosion",
@@ -10,11 +224,83 @@
       "Hot work permit",
       "Permits"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/january/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/april/english": [
+      "Emergency Response",
+      "Flammable Liquids",
+      "Hot work permit"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/november/english": [
+      "Beacon Review",
+      "Combustible Liquid",
+      "Employee Participation",
       "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Overflow",
+      "Process Safety",
+      "Safety Culture",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/september/english": [
+      "Fire",
+      "Flammable Liquids",
+      "Leaks and Spills",
+      "Operating Procedures",
+      "Overflow",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/april/english": [
+      "Construction",
+      "Emergency Response",
+      "Explosion",
+      "Flammable Liquids",
+      "Maintenance",
+      "Management of Change",
+      "Permits",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/july/english": [
+      "Combustible Liquid",
+      "Fire",
+      "Flammable Liquids",
+      "Flexible Connections",
+      "Leaks and Spills",
+      "Mechanical Integrity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/august/english": [
       "Flammable Gas",
       "Flammable Liquids",
-      "Vapor Cloud Explosion"
+      "Hot work permit"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/march/english": [
+      "Distillation",
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Instrumentation",
+      "Interlocks",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Overflow"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/january/english": [
+      "Bonding and Grounding",
+      "Drums",
+      "Explosion",
+      "Fire",
+      "Flammable Liquids",
+      "Flexible Connections",
+      "Leaks and Spills",
+      "Pump",
+      "Static Electricity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/august/english": [
+      "Bonding and Grounding",
+      "Explosion",
+      "Flammable Liquids",
+      "Hot work permit",
+      "Storage Tanks"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/december/english": [
       "Bonding and Grounding",
@@ -38,291 +324,59 @@
       "Static Electricity",
       "Vapor Cloud Explosion"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/august/english": [
-      "Bonding and Grounding",
-      "Explosion",
-      "Flammable Liquids",
-      "Hot work permit",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/march/english": [
-      "Combustible Liquid",
-      "Explosion",
-      "Flammable Liquids",
-      "Incident Investigation",
-      "Laboratory Incidents",
-      "Oxygen",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/january/english": [
-      "Bonding and Grounding",
-      "Drums",
-      "Explosion",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/april/english": [
+      "Activated Carbon Absorbers",
       "Fire",
-      "Flammable Liquids",
-      "Flexible Connections",
-      "Leaks and Spills",
-      "Pump",
-      "Static Electricity"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/september/english": [
-      "Employee Participation",
-      "Fire",
-      "Flammable Liquids",
       "Management of Change",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "Overflow",
+      "Pre-startup safety review",
       "Storage Tanks"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/august/english": [
-      "Flammable Gas",
-      "Flammable Liquids",
-      "Hot work permit"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/july/english": [
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Flammable Liquids",
-      "Lockout Tagout",
-      "Maintenance",
-      "Operating Procedures",
-      "Permits",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/september/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/december/english": [
       "Chemical Exposure",
-      "Flammable Liquids",
-      "Static Electricity"
+      "Emergency Response",
+      "Mechanical Integrity",
+      "Process Safety",
+      "Reactive Chemistry",
+      "Safety Culture",
+      "Storage Tanks",
+      "Toxic gas release"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/november/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/october/english": [
+      "Emergency Relief",
       "Explosion",
-      "Fire",
-      "Flammable Liquids",
-      "Laboratory Incidents"
+      "Maintenance",
+      "Physical Overpressurization",
+      "Storage Tanks"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/september/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/may/english": [
       "Explosion",
-      "Fire",
-      "Flammable Liquids",
+      "Flammable Gas",
       "Hot work permit",
       "Maintenance",
       "Permits",
-      "Tank truck"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/august/english": [
-      "Bonding and Grounding",
-      "Combustible Liquid",
-      "Drums",
-      "Explosion",
-      "Fire",
-      "Flammable Liquids",
-      "Flexible Connections",
-      "Mechanical Integrity",
-      "Static Electricity",
       "Storage Tanks"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/march/english": [
-      "Construction",
-      "Employee Participation",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/october/english": [
       "Explosion",
-      "Flammable Liquids",
-      "Process Safety",
-      "Safety Culture",
-      "Vapor Cloud Explosion"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/august/english": [
-      "Construction",
-      "Employee Participation",
-      "Fire",
-      "Flammable Gas",
-      "Flammable Liquids",
-      "Hot work permit",
-      "Maintenance",
-      "Permits"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/september/english": [
-      "Fire",
-      "Flammable Liquids",
-      "Leaks and Spills",
-      "Operating Procedures",
-      "Overflow",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/december/english": [
-      "Emergency Response",
-      "Fire",
-      "Flammable Liquids",
       "Management of Change",
       "Operating Procedures",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/september/english": [
-      "Fire",
-      "Flammable Liquids",
-      "Human Factors",
-      "Instrumentation",
-      "Leaks and Spills",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "Overflow",
-      "PHA",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/february/english": [
-      "Bonding and Grounding",
-      "Drums",
-      "Explosion",
-      "Fire",
-      "Flammable Liquids",
-      "Flexible Connections",
-      "Leaks and Spills",
-      "Pump",
-      "Static Electricity"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/november/english": [
-      "Flammable Liquids",
-      "Maintenance",
-      "Management of Change",
-      "Operating Procedures",
+      "Storage Tanks",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/july/english": [
-      "Combustible Liquid",
-      "Fire",
-      "Flammable Liquids",
-      "Flexible Connections",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/march/english": [
+      "Instrumentation",
+      "Interlocks",
       "Leaks and Spills",
-      "Mechanical Integrity"
+      "Mechanical Integrity",
+      "Overflow",
+      "Storage Tanks"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/june/english": [
-      "Fire",
-      "Flammable Liquids",
-      "Human Factors",
-      "Leaks and Spills",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/july/english": [
+      "Insulation",
       "Management of Change",
       "Mechanical Integrity",
       "Piping",
-      "Pump"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/august/english": [
-      "Explosion",
-      "Flammable Liquids",
-      "Hot work permit",
       "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2001/november/english": [
-      "Explosion",
-      "Flammable Liquids",
-      "PHA",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/april/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Fire",
-      "Flammable Gas",
-      "Flammable Liquids",
-      "Security",
-      "Training",
-      "Weather"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/april/english": [
-      "Emergency Response",
-      "Flammable Liquids",
-      "Hot work permit"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/february/english": [
-      "Combustible Liquid",
-      "Explosion",
-      "Fire",
-      "Flammable Liquids",
-      "Instrumentation",
-      "Interlocks",
-      "Leaks and Spills",
-      "Overflow",
-      "Safety Instrumented Systems (SIS)",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/november/english": [
-      "Beacon Review",
-      "Combustible Liquid",
-      "Employee Participation",
-      "Explosion",
-      "Fire",
-      "Flammable Liquids",
-      "Overflow",
-      "Process Safety",
-      "Safety Culture",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/november/english": [
-      "Explosion",
-      "Flammable Liquids",
-      "Operating Procedures"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/july/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Flammable Liquids",
-      "Maintenance",
-      "Operating Procedures",
-      "Pump"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/july/english": [
-      "Fire",
-      "Flammable Liquids",
-      "Leaks and Spills",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "PHA",
-      "Pump"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/october/english": [
-      "Fire",
-      "Flammable Liquids",
-      "Leaks and Spills",
-      "Operating Procedures",
-      "Overflow",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/april/english": [
-      "Construction",
-      "Emergency Response",
-      "Explosion",
-      "Flammable Liquids",
-      "Maintenance",
-      "Management of Change",
-      "Permits",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/november/english": [
-      "Employee Participation",
-      "Fire",
-      "Flammable Gas",
-      "Flammable Liquids",
-      "Instrumentation",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Nitrogen",
-      "Physical Overpressurization"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/march/english": [
-      "Distillation",
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Flammable Liquids",
-      "Instrumentation",
-      "Interlocks",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "Overflow"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/december/english": [
       "Emergency Response",
@@ -335,69 +389,10 @@
       "Storage Tanks",
       "Toxic gas release"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/october/english": [
-      "Explosion",
-      "Management of Change",
-      "Operating Procedures",
-      "Storage Tanks",
-      "Training"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/september/english": [
       "Static Electricity",
       "Storage Tanks",
       "Weather"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/october/english": [
-      "Emergency Relief",
-      "Explosion",
-      "Maintenance",
-      "Physical Overpressurization",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/november/english": [
-      "BLEVE",
-      "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Overflow",
-      "Safety Culture",
-      "Storage Tanks",
-      "Vapor Cloud Explosion"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/march/english": [
-      "Explosion",
-      "Interlocks",
-      "Pre-startup safety review",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/may/english": [
-      "Corrosion",
-      "Explosion",
-      "Hot work permit",
-      "Leaks and Spills",
-      "Mechanical Integrity",
-      "Permits",
-      "Safety Culture",
-      "Storage Tanks",
-      "Tank Collapse"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/march/english": [
-      "Instrumentation",
-      "Interlocks",
-      "Leaks and Spills",
-      "Mechanical Integrity",
-      "Overflow",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/december/english": [
-      "Explosion",
-      "Storage Tanks",
-      "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/january/english": [
-      "Human Factors",
-      "Overflow",
-      "Storage Tanks"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/may/english": [
       "Combustible Liquid",
@@ -407,37 +402,27 @@
       "Mechanical Integrity",
       "Storage Tanks"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/november/english": [
-      "Explosion",
-      "Incident Investigation",
-      "Management of Change",
-      "Monomer",
-      "Polymerization",
-      "Reactive Chemistry",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/july/english": [
-      "Human Factors",
-      "Management of Change",
-      "Operating Procedures",
-      "Storage Tanks",
-      "Tank Collapse",
-      "Tank truck",
-      "Training",
-      "Vacuum"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/april/english": [
-      "Emergency Relief",
-      "Explosion",
-      "Operating Procedures",
-      "Physical Overpressurization",
-      "Steam",
-      "Storage Tanks"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/january/english": [
       "Drums",
       "Reactive Chemistry",
       "Safety Culture",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/november/english": [
+      "BLEVE",
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Leaks and Spills",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/may/english": [
+      "Emergency Response",
+      "Leaks and Spills",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Overflow",
       "Storage Tanks"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/february/english": [
@@ -448,26 +433,17 @@
       "Tank Collapse",
       "Vacuum"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/february/english": [
-      "Activated Carbon Absorbers",
-      "Employee Participation",
-      "Fire",
-      "Incident Investigation",
-      "Safety Culture",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/april/english": [
-      "Human Factors",
-      "Operating Procedures",
-      "Reactive Chemistry",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/december/english": [
+      "Explosion",
       "Storage Tanks",
-      "Tank truck",
-      "Toxic gas release",
-      "Training"
+      "Toxic gas release"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/may/english": [
-      "Leaks and Spills",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/april/english": [
+      "Emergency Relief",
+      "Explosion",
       "Operating Procedures",
+      "Physical Overpressurization",
+      "Steam",
       "Storage Tanks"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/february/english": [
@@ -481,66 +457,12 @@
       "Toxic gas release",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/may/english": [
-      "Explosion",
-      "Flammable Gas",
-      "Hot work permit",
-      "Maintenance",
-      "Permits",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/july/english": [
-      "Insulation",
-      "Management of Change",
-      "Mechanical Integrity",
-      "Piping",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/may/english": [
-      "Emergency Response",
-      "Mechanical Integrity",
-      "Storage Tanks",
-      "Tank Collapse"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/may/english": [
-      "Emergency Response",
-      "Leaks and Spills",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Overflow",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/december/english": [
-      "Chemical Exposure",
-      "Emergency Response",
-      "Mechanical Integrity",
-      "Process Safety",
-      "Reactive Chemistry",
-      "Safety Culture",
-      "Storage Tanks",
-      "Toxic gas release"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/february/english": [
       "Operating Procedures",
       "Storage Tanks",
       "Tank Car",
       "Tank Collapse",
       "Vacuum"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/february/english": [
-      "Corrosion",
-      "Insulation",
-      "Mechanical Integrity",
-      "Piping",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/june/english": [
-      "Leaks and Spills",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Overflow",
-      "Storage Tanks",
-      "Tank truck"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/march/english": [
       "Chemical Exposure",
@@ -550,22 +472,6 @@
       "Storage Tanks",
       "Tank truck",
       "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/november/english": [
-      "BLEVE",
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Leaks and Spills",
-      "Storage Tanks"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/april/english": [
-      "Activated Carbon Absorbers",
-      "Fire",
-      "Management of Change",
-      "Pre-startup safety review",
-      "Storage Tanks"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/december/english": [
       "Emergency Response",
@@ -578,318 +484,99 @@
       "Storage Tanks",
       "Toxic gas release"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/may/english": [
-      "Explosion",
-      "Housekeeping",
-      "Operating Procedures",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/september/english": [
-      "Employee Participation",
-      "Explosion",
-      "Human Factors",
-      "Operating Procedures",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/april/english": [
-      "Construction",
-      "Explosion",
-      "Hot work permit",
-      "Maintenance",
-      "Permits"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/july/english": [
-      "Explosion",
-      "Human Factors",
-      "Operating Procedures",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/october/english": [
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Gas Cylinders",
-      "Incident Investigation",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/may/english": [
       "Leaks and Spills",
       "Operating Procedures",
-      "Weather"
+      "Storage Tanks"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/july/english": [
-      "Emergency Response",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/may/english": [
+      "Corrosion",
       "Explosion",
-      "Fire",
-      "Human Factors",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/october/english": [
-      "Dust explosion",
-      "Explosion",
-      "Fire",
-      "Housekeeping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/march/english": [
-      "Explosion",
-      "Fire",
+      "Hot work permit",
+      "Leaks and Spills",
+      "Mechanical Integrity",
       "Permits",
+      "Safety Culture",
+      "Storage Tanks",
+      "Tank Collapse"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/november/english": [
+      "Explosion",
+      "Incident Investigation",
+      "Management of Change",
+      "Monomer",
+      "Polymerization",
       "Reactive Chemistry",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/april/english": [
+      "Human Factors",
+      "Operating Procedures",
+      "Reactive Chemistry",
+      "Storage Tanks",
+      "Tank truck",
+      "Toxic gas release",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/february/english": [
+      "Corrosion",
+      "Insulation",
+      "Mechanical Integrity",
+      "Piping",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/march/english": [
+      "Explosion",
+      "Interlocks",
+      "Pre-startup safety review",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/january/english": [
+      "Human Factors",
+      "Overflow",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/may/english": [
+      "Emergency Response",
+      "Mechanical Integrity",
+      "Storage Tanks",
+      "Tank Collapse"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/february/english": [
+      "Activated Carbon Absorbers",
+      "Employee Participation",
+      "Fire",
+      "Incident Investigation",
+      "Safety Culture",
+      "Storage Tanks"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/july/english": [
+      "Human Factors",
+      "Management of Change",
+      "Operating Procedures",
+      "Storage Tanks",
+      "Tank Collapse",
+      "Tank truck",
+      "Training",
       "Vacuum"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/september/english": [
-      "Dust explosion",
-      "Explosion",
-      "Operating Procedures",
-      "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/february/english": [
-      "Explosion",
-      "Flammable Gas",
-      "Gas Cylinders",
-      "Operating Procedures",
-      "PHA"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/june/english": [
-      "Burner control systems",
-      "Explosion",
-      "Interlocks",
-      "Management of Change",
-      "Pre-startup safety review"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/may/english": [
-      "Corrosion",
-      "Employee Participation",
-      "Explosion",
-      "Hydrogen",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Weather"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/december/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/november/english": [
       "BLEVE",
       "Explosion",
+      "Fire",
       "Flammable Gas",
-      "Gas Cylinders",
       "Overflow",
-      "Physical Overpressurization",
-      "Tank Car",
-      "Tank truck"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/october/english": [
-      "Explosion",
-      "Fire",
-      "Leaks and Spills"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/august/english": [
-      "BLEVE",
-      "Emergency Relief",
-      "Explosion",
-      "Operating Procedures",
-      "Physical Overpressurization",
-      "Pre-startup safety review",
-      "Pump"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/january/english": [
-      "Explosion",
-      "Flammable Gas",
-      "PHA"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/may/english": [
-      "Dust explosion",
-      "Explosion",
-      "Fire",
-      "Operating Procedures"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/may/english": [
-      "Battery Room",
-      "Explosion",
-      "Flammable Gas",
-      "Hydrogen",
-      "PHA"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/january/english": [
-      "Explosion",
-      "Hot work permit",
-      "Management of Change"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/january/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Explosion",
-      "Power failure",
-      "Weather"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/september/english": [
-      "Construction",
-      "Explosion",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "Physical Overpressurization",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/august/english": [
-      "Explosion",
-      "Human Factors",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "Power failure",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/february/english": [
-      "Explosion",
-      "Leaks and Spills",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/november/english": [
-      "Explosion",
-      "Operating Procedures",
-      "PHA",
-      "Steam",
-      "Tank truck"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/september/english": [
-      "Distillation",
-      "Employee Participation",
-      "Explosion",
-      "Human Factors",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/may/english": [
-      "Explosion",
-      "Maintenance",
-      "Management of Change",
-      "Operating Procedures"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/june/english": [
-      "Explosion",
-      "Human Factors",
-      "Interlocks",
-      "Operating Procedures",
-      "Polymerization",
       "Safety Culture",
-      "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/november/english": [
-      "Explosion",
-      "Instrumentation",
-      "Management of Change",
-      "Operating Procedures",
-      "Steam"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/september/english": [
-      "Emergency Relief",
-      "Explosion",
-      "Incident Investigation",
-      "Maintenance",
-      "Permits",
-      "Physical Overpressurization",
-      "Piping",
-      "Polymerization"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/september/english": [
-      "Chemical Exposure",
-      "Explosion",
-      "Flammable Gas",
-      "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/september/english": [
-      "Emergency Response",
-      "Explosion",
-      "Fire"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/july/english": [
-      "Corrosion",
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Insulation",
-      "Leaks and Spills",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/august/english": [
-      "Explosion",
-      "Flammable Gas",
+      "Storage Tanks",
       "Vapor Cloud Explosion"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/february/english": [
-      "Corrosion",
-      "Emergency Response",
-      "Explosion",
-      "Monomer",
-      "Piping",
-      "Polymerization",
-      "Reactive Chemistry",
-      "Tank Car"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/may/english": [
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Reactive Chemistry",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/november/english": [
-      "Cold Embrittlement",
-      "Explosion",
-      "Flammable Gas",
-      "Management of Change",
-      "Mechanical Integrity",
-      "Operating Procedures"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/july/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Gas Cylinders",
-      "Human Factors",
-      "Safety Culture",
-      "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/august/english": [
-      "Emergency Response",
-      "Explosion",
-      "Fire",
-      "Leaks and Spills"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/october/english": [
-      "Explosion",
-      "Operating Procedures",
-      "PHA",
-      "Pump"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/april/english": [
-      "Explosion",
-      "Fire",
-      "Human Factors",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/june/english": [
+      "Leaks and Spills",
       "Maintenance",
-      "Operating Procedures",
-      "Physical Overpressurization",
-      "Steam",
-      "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/march/english": [
-      "Distillation",
-      "Explosion",
       "Mechanical Integrity",
-      "Operating Procedures",
-      "PHA",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/march/english": [
-      "Employee Participation",
-      "Explosion",
-      "Fire",
-      "Hydrogen",
-      "Incident Investigation",
-      "Mechanical Integrity",
-      "Process Safety",
-      "Reactive Chemistry",
-      "Safety Culture"
+      "Overflow",
+      "Storage Tanks",
+      "Tank truck"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/june/english": [
       "Explosion",
@@ -902,51 +589,36 @@
       "Safety Culture",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/june/english": [
-      "Explosion",
-      "Leaks and Spills",
-      "Management of Change",
-      "Vapor Cloud Explosion"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/may/english": [
-      "Dust explosion",
-      "Explosion",
-      "Housekeeping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/october/english": [
-      "Bonding and Grounding",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/august/english": [
+      "Emergency Response",
       "Explosion",
       "Fire",
-      "Flammable Gas",
-      "Gas Cylinders",
-      "Hydrogen",
-      "Laboratory Incidents",
-      "Safety Culture",
-      "Static Electricity"
+      "Leaks and Spills"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/july/english": [
-      "Distillation",
-      "Explosion",
-      "Reactive Chemistry",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/march/english": [
-      "Explosion",
-      "Operating Procedures",
-      "PHA",
-      "Peroxides",
-      "Piping",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/august/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/january/english": [
+      "Emergency Response",
       "Employee Participation",
       "Explosion",
-      "Fire",
-      "Flammable Gas",
-      "Human Factors",
-      "Leaks and Spills",
+      "Power failure",
+      "Weather"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/october/english": [
+      "Explosion",
+      "Housekeeping",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/september/english": [
+      "Construction",
+      "Explosion",
+      "Maintenance",
       "Mechanical Integrity",
-      "Piping",
+      "Operating Procedures",
+      "Physical Overpressurization",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/august/english": [
+      "Explosion",
+      "Flammable Gas",
       "Vapor Cloud Explosion"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/february/english": [
@@ -957,46 +629,10 @@
       "Interlocks",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/april/english": [
-      "Distillation",
-      "Explosion",
-      "Human Factors",
-      "Instrumentation",
-      "Mechanical Integrity",
-      "Reactive Chemistry",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/july/english": [
-      "Explosion",
-      "Flammable Gas",
-      "Mechanical Integrity",
-      "Operating Procedures",
-      "Static Electricity"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/october/english": [
-      "Drums",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/october/english": [
       "Explosion",
       "Fire",
-      "Housekeeping",
-      "Reactive Chemistry",
-      "Tank Car"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/may/english": [
-      "Corrosion",
-      "Explosion",
-      "Maintenance",
-      "Mechanical Integrity"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/october/english": [
-      "Explosion",
-      "Housekeeping",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/october/english": [
-      "Explosion",
-      "Flammable Gas",
-      "Leaks and Spills",
-      "Mechanical Integrity"
+      "Leaks and Spills"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/january/english": [
       "Burner control systems",
@@ -1014,17 +650,369 @@
       "Nitrogen",
       "Physical Overpressurization"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/october/english": [
-      "Employee Participation",
-      "Fire",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/april/english": [
+      "Distillation",
+      "Explosion",
+      "Human Factors",
+      "Instrumentation",
       "Mechanical Integrity",
+      "Reactive Chemistry",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/february/english": [
+      "Explosion",
+      "Leaks and Spills",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/november/english": [
+      "Explosion",
+      "Operating Procedures",
+      "PHA",
+      "Steam",
+      "Tank truck"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/march/english": [
+      "Explosion",
+      "Fire",
+      "Permits",
+      "Reactive Chemistry",
+      "Vacuum"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/june/english": [
+      "Explosion",
+      "Human Factors",
+      "Interlocks",
+      "Operating Procedures",
+      "Polymerization",
+      "Safety Culture",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/november/english": [
+      "Cold Embrittlement",
+      "Explosion",
+      "Flammable Gas",
+      "Management of Change",
+      "Mechanical Integrity",
+      "Operating Procedures"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/october/english": [
+      "Explosion",
+      "Operating Procedures",
+      "PHA",
+      "Pump"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/october/english": [
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Gas Cylinders",
+      "Incident Investigation",
+      "Leaks and Spills",
+      "Operating Procedures",
+      "Weather"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/july/english": [
+      "Distillation",
+      "Explosion",
+      "Reactive Chemistry",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/july/english": [
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Human Factors",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/october/english": [
+      "Bonding and Grounding",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Gas Cylinders",
+      "Hydrogen",
+      "Laboratory Incidents",
+      "Safety Culture",
+      "Static Electricity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/september/english": [
+      "Emergency Response",
+      "Explosion",
+      "Fire"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/january/english": [
+      "Explosion",
+      "Hot work permit",
+      "Management of Change"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/march/english": [
+      "Employee Participation",
+      "Explosion",
+      "Fire",
+      "Hydrogen",
+      "Incident Investigation",
+      "Mechanical Integrity",
+      "Process Safety",
+      "Reactive Chemistry",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/february/english": [
+      "Corrosion",
+      "Emergency Response",
+      "Explosion",
+      "Monomer",
+      "Piping",
+      "Polymerization",
+      "Reactive Chemistry",
+      "Tank Car"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/may/english": [
+      "Corrosion",
+      "Employee Participation",
+      "Explosion",
+      "Hydrogen",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Weather"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/march/english": [
+      "Distillation",
+      "Explosion",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "PHA",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/august/english": [
+      "Explosion",
+      "Human Factors",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Power failure",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/april/english": [
+      "Explosion",
+      "Fire",
+      "Human Factors",
+      "Maintenance",
+      "Operating Procedures",
+      "Physical Overpressurization",
+      "Steam",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/may/english": [
+      "Corrosion",
+      "Explosion",
+      "Maintenance",
+      "Mechanical Integrity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/february/english": [
+      "Explosion",
+      "Flammable Gas",
+      "Gas Cylinders",
       "Operating Procedures",
       "PHA"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/june/english": [
-      "Instrumentation",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/october/english": [
+      "Dust explosion",
+      "Explosion",
+      "Fire",
+      "Housekeeping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/may/english": [
+      "Explosion",
+      "Maintenance",
+      "Management of Change",
+      "Operating Procedures"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/may/english": [
+      "Dust explosion",
+      "Explosion",
+      "Housekeeping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/september/english": [
+      "Chemical Exposure",
+      "Explosion",
+      "Flammable Gas",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/march/english": [
+      "Explosion",
+      "Operating Procedures",
       "PHA",
-      "Power failure"
+      "Peroxides",
+      "Piping",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/april/english": [
+      "Construction",
+      "Explosion",
+      "Hot work permit",
+      "Maintenance",
+      "Permits"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/may/english": [
+      "Dust explosion",
+      "Explosion",
+      "Fire",
+      "Operating Procedures"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/october/english": [
+      "Drums",
+      "Explosion",
+      "Fire",
+      "Housekeeping",
+      "Reactive Chemistry",
+      "Tank Car"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/may/english": [
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Reactive Chemistry",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/july/english": [
+      "Explosion",
+      "Human Factors",
+      "Operating Procedures",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/october/english": [
+      "Explosion",
+      "Flammable Gas",
+      "Leaks and Spills",
+      "Mechanical Integrity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/september/english": [
+      "Employee Participation",
+      "Explosion",
+      "Human Factors",
+      "Operating Procedures",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/december/english": [
+      "BLEVE",
+      "Explosion",
+      "Flammable Gas",
+      "Gas Cylinders",
+      "Overflow",
+      "Physical Overpressurization",
+      "Tank Car",
+      "Tank truck"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/september/english": [
+      "Emergency Relief",
+      "Explosion",
+      "Incident Investigation",
+      "Maintenance",
+      "Permits",
+      "Physical Overpressurization",
+      "Piping",
+      "Polymerization"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/may/english": [
+      "Explosion",
+      "Housekeeping",
+      "Operating Procedures",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/august/english": [
+      "BLEVE",
+      "Emergency Relief",
+      "Explosion",
+      "Operating Procedures",
+      "Physical Overpressurization",
+      "Pre-startup safety review",
+      "Pump"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/september/english": [
+      "Distillation",
+      "Employee Participation",
+      "Explosion",
+      "Human Factors",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/january/english": [
+      "Explosion",
+      "Flammable Gas",
+      "PHA"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/september/english": [
+      "Dust explosion",
+      "Explosion",
+      "Operating Procedures",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/may/english": [
+      "Battery Room",
+      "Explosion",
+      "Flammable Gas",
+      "Hydrogen",
+      "PHA"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/june/english": [
+      "Explosion",
+      "Leaks and Spills",
+      "Management of Change",
+      "Vapor Cloud Explosion"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/november/english": [
+      "Explosion",
+      "Instrumentation",
+      "Management of Change",
+      "Operating Procedures",
+      "Steam"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/july/english": [
+      "Emergency Response",
+      "Employee Participation",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Gas Cylinders",
+      "Human Factors",
+      "Safety Culture",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/july/english": [
+      "Corrosion",
+      "Emergency Response",
+      "Explosion",
+      "Fire",
+      "Insulation",
+      "Leaks and Spills",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/june/english": [
+      "Burner control systems",
+      "Explosion",
+      "Interlocks",
+      "Management of Change",
+      "Pre-startup safety review"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/july/english": [
+      "Explosion",
+      "Flammable Gas",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Static Electricity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/august/english": [
+      "Employee Participation",
+      "Explosion",
+      "Fire",
+      "Flammable Gas",
+      "Human Factors",
+      "Leaks and Spills",
+      "Mechanical Integrity",
+      "Piping",
+      "Vapor Cloud Explosion"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/september/english": [
       "Employee Participation",
@@ -1046,6 +1034,41 @@
       "Physical Overpressurization",
       "Piping"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/march/english": [
+      "Emergency Relief",
+      "Management of Change",
+      "PHA",
+      "Piping",
+      "Pre-startup safety review"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/july/english": [
+      "Drums",
+      "Fire",
+      "Housekeeping",
+      "Leaks and Spills",
+      "Operating Procedures",
+      "PHA",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/april/english": [
+      "Operating Procedures",
+      "PHA",
+      "Pre-startup safety review"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/february/english": [
+      "Employee Participation",
+      "Instrumentation",
+      "Interlocks",
+      "Operating Procedures",
+      "PHA"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/october/english": [
+      "Employee Participation",
+      "Fire",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "PHA"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/september/english": [
       "Employee Participation",
       "Management of Change",
@@ -1061,46 +1084,15 @@
       "Static Electricity",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/july/english": [
-      "Drums",
-      "Fire",
-      "Housekeeping",
-      "Leaks and Spills",
-      "Operating Procedures",
-      "PHA",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/february/english": [
-      "Employee Participation",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/june/english": [
       "Instrumentation",
-      "Interlocks",
-      "Operating Procedures",
-      "PHA"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/march/english": [
-      "Emergency Relief",
-      "Management of Change",
       "PHA",
-      "Piping",
-      "Pre-startup safety review"
+      "Power failure"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/april/english": [
       "Gas Cylinders",
       "Operating Procedures",
       "PHA"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/april/english": [
-      "Operating Procedures",
-      "PHA",
-      "Pre-startup safety review"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/january/english": [
-      "Drums",
-      "Incident Investigation",
-      "Monomer",
-      "Operating Procedures",
-      "Polymerization",
-      "Reactive Chemistry"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/june/english": [
       "Corrosion",
@@ -1111,11 +1103,6 @@
       "Piping",
       "Steam"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/february/english": [
-      "Employee Participation",
-      "Incident Investigation",
-      "Safety Culture"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/january/english": [
       "Employee Participation",
       "Incident Investigation",
@@ -1123,29 +1110,33 @@
       "Safety Culture",
       "Training"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/january/english": [
+      "Drums",
+      "Incident Investigation",
+      "Monomer",
+      "Operating Procedures",
+      "Polymerization",
+      "Reactive Chemistry"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2001/december/english": [
+      "Incident Investigation",
+      "Weather"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/february/english": [
+      "Employee Participation",
+      "Incident Investigation",
+      "Safety Culture"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/november/english": [
       "Employee Participation",
       "Incident Investigation",
       "Process Safety",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2001/december/english": [
-      "Incident Investigation",
-      "Weather"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/june/english": [
       "Emergency Response",
       "Process Safety",
       "Safety Culture",
-      "Weather"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/october/english": [
-      "Fire",
-      "Flammable Gas",
-      "Leaks and Spills",
-      "Management of Change",
-      "Mechanical Integrity",
-      "Piping",
       "Weather"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/november/english": [
@@ -1160,62 +1151,34 @@
       "Piping",
       "Weather"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/october/english": [
+      "Fire",
+      "Flammable Gas",
+      "Leaks and Spills",
+      "Management of Change",
+      "Mechanical Integrity",
+      "Piping",
+      "Weather"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/october/english": [
+      "Flammable Gas",
+      "Leaks and Spills"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/november/english": [
       "Emergency Relief",
       "Flammable Gas",
       "Maintenance",
       "Mechanical Integrity"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/october/english": [
-      "Flammable Gas",
-      "Leaks and Spills"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/february/english": [
       "Tank Collapse",
       "Vacuum"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/october/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/december/english": [
+      "Chemical Exposure",
+      "Housekeeping",
       "Operating Procedures",
-      "Physical Overpressurization",
-      "Reactive Chemistry",
-      "Safety Culture",
-      "Steam",
-      "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/may/english": [
-      "Employee Participation",
-      "Human Factors",
-      "Operating Procedures",
-      "Safety Culture",
-      "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/may/english": [
-      "Hot work permit",
-      "Maintenance",
-      "Operating Procedures"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/march/english": [
-      "Emergency Response",
-      "Operating Procedures",
-      "Power failure"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/january/english": [
-      "Operating Procedures",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/june/english": [
-      "Employee Participation",
-      "Human Factors",
-      "Operating Procedures",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/october/english": [
-      "Human Factors",
-      "Instrumentation",
-      "Interlocks",
-      "Maintenance",
-      "Operating Procedures",
-      "Safety Culture"
+      "Reactive Chemistry"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/march/english": [
       "Human Factors",
@@ -1229,31 +1192,39 @@
       "Safety Instrumented Systems (SIS)",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/november/english": [
-      "Emergency Relief",
-      "Mechanical Integrity",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/october/english": [
       "Operating Procedures",
+      "Physical Overpressurization",
+      "Reactive Chemistry",
+      "Safety Culture",
+      "Steam",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/june/english": [
+      "Lockout Tagout",
+      "Maintenance",
+      "Operating Procedures",
+      "Permits",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/december/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/may/english": [
+      "Operating Procedures",
+      "Reactive Chemistry",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/march/english": [
+      "Operating Procedures",
+      "Pre-startup safety review"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/june/english": [
+      "Lockout Tagout",
       "Management of Change",
       "Operating Procedures",
       "Pre-startup safety review"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/june/english": [
-      "Human Factors",
-      "Management of Change",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/january/english": [
       "Operating Procedures",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/january/english": [
-      "Chemical Exposure",
-      "Leaks and Spills",
-      "Maintenance",
-      "Operating Procedures",
-      "Permits",
-      "Piping",
-      "Toxic gas release"
+      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/april/english": [
       "Emergency Response",
@@ -1261,9 +1232,30 @@
       "Operating Procedures",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/march/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2017/october/english": [
+      "Human Factors",
+      "Instrumentation",
+      "Interlocks",
+      "Maintenance",
       "Operating Procedures",
-      "Pre-startup safety review"
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/may/english": [
+      "Hot work permit",
+      "Maintenance",
+      "Operating Procedures"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/june/english": [
+      "Human Factors",
+      "Management of Change",
+      "Operating Procedures",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/december/english": [
+      "Human Factors",
+      "Management of Change",
+      "Operating Procedures",
+      "Piping"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/december/english": [
       "Human Factors",
@@ -1275,6 +1267,30 @@
       "Nitrogen",
       "Operating Procedures"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/august/english": [
+      "Hydrogen Sulfide",
+      "Operating Procedures",
+      "Reactive Chemistry",
+      "Sewer",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/november/english": [
+      "Emergency Response",
+      "Employee Participation",
+      "Human Factors",
+      "Instrumentation",
+      "Interlocks",
+      "Operating Procedures",
+      "Safety Culture",
+      "Safety Instrumented Systems (SIS)",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/august/english": [
+      "Chemical Exposure",
+      "Management of Change",
+      "Operating Procedures",
+      "Reactive Chemistry"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/march/english": [
       "Chemical Exposure",
       "Drums",
@@ -1283,22 +1299,57 @@
       "Reactive Chemistry",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/august/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/december/english": [
+      "Management of Change",
+      "Operating Procedures",
+      "Pre-startup safety review"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/june/english": [
       "Employee Participation",
       "Human Factors",
-      "Maintenance",
-      "Mechanical Integrity",
+      "Operating Procedures",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/november/english": [
+      "Employee Participation",
+      "Human Factors",
       "Operating Procedures",
       "Pre-startup safety review",
+      "Process Safety",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/november/english": [
+      "Emergency Relief",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/may/english": [
+      "Employee Participation",
+      "Human Factors",
+      "Operating Procedures",
       "Safety Culture",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/june/english": [
-      "Lockout Tagout",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/january/english": [
+      "Chemical Exposure",
+      "Leaks and Spills",
       "Maintenance",
       "Operating Procedures",
       "Permits",
-      "Training"
+      "Piping",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/march/english": [
+      "Burner control systems",
+      "Maintenance",
+      "Operating Procedures",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/march/english": [
+      "Emergency Response",
+      "Operating Procedures",
+      "Power failure"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/november/english": [
       "Chemical Exposure",
@@ -1312,77 +1363,18 @@
       "Tank truck",
       "Toxic gas release"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/june/english": [
-      "Lockout Tagout",
-      "Management of Change",
-      "Operating Procedures",
-      "Pre-startup safety review"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/may/english": [
-      "Operating Procedures",
-      "Reactive Chemistry",
-      "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/august/english": [
-      "Hydrogen Sulfide",
-      "Operating Procedures",
-      "Reactive Chemistry",
-      "Sewer",
-      "Toxic gas release"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/june/english": [
       "Gas Cylinders",
       "Operating Procedures"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/december/english": [
-      "Human Factors",
-      "Management of Change",
-      "Operating Procedures",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/december/english": [
-      "Chemical Exposure",
-      "Housekeeping",
-      "Operating Procedures",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/march/english": [
-      "Burner control systems",
-      "Maintenance",
-      "Operating Procedures",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/november/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/august/english": [
       "Employee Participation",
       "Human Factors",
-      "Operating Procedures",
-      "Pre-startup safety review",
-      "Process Safety",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/august/english": [
-      "Chemical Exposure",
-      "Management of Change",
-      "Operating Procedures",
-      "Reactive Chemistry"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/november/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Human Factors",
-      "Instrumentation",
-      "Interlocks",
-      "Operating Procedures",
-      "Safety Culture",
-      "Safety Instrumented Systems (SIS)",
-      "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/may/english": [
-      "Leaks and Spills",
       "Maintenance",
       "Mechanical Integrity",
       "Operating Procedures",
-      "Pump",
+      "Pre-startup safety review",
+      "Safety Culture",
       "Training"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/march/english": [
@@ -1396,6 +1388,14 @@
       "Reactive Chemistry",
       "Safety Culture",
       "Static Electricity"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/may/english": [
+      "Leaks and Spills",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Operating Procedures",
+      "Pump",
+      "Training"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/september/english": [
       "Chemical Exposure",
@@ -1414,35 +1414,10 @@
       "Gas Cylinders",
       "Tank Collapse"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/october/english": [
-      "Lockout Tagout",
-      "Maintenance",
-      "Permits",
-      "Pre-startup safety review"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/february/english": [
-      "Maintenance",
-      "Mechanical Integrity",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/may/english": [
+      "Management of Change",
       "Piping",
       "Pre-startup safety review"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/january/english": [
-      "Hazard Identification",
-      "Pre-startup safety review",
-      "Warning Signs"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/february/english": [
-      "Employee Participation",
-      "Human Factors",
-      "Pre-startup safety review",
-      "Process Safety",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/december/english": [
-      "Employee Participation",
-      "Pre-startup safety review",
-      "Process Safety",
-      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/september/english": [
       "Construction",
@@ -1453,8 +1428,36 @@
       "Pre-startup safety review",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/may/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/june/english": [
+      "Emergency Response",
+      "Fire",
+      "Human Factors",
       "Management of Change",
+      "Pre-startup safety review",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/december/english": [
+      "Employee Participation",
+      "Pre-startup safety review",
+      "Process Safety",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/february/english": [
+      "Maintenance",
+      "Permits",
+      "Pre-startup safety review",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/february/english": [
+      "Employee Participation",
+      "Human Factors",
+      "Pre-startup safety review",
+      "Process Safety",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/february/english": [
+      "Maintenance",
+      "Mechanical Integrity",
       "Piping",
       "Pre-startup safety review"
     ],
@@ -1464,19 +1467,16 @@
       "Mechanical Integrity",
       "Pre-startup safety review"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/february/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/october/english": [
+      "Lockout Tagout",
       "Maintenance",
       "Permits",
-      "Pre-startup safety review",
-      "Safety Culture"
+      "Pre-startup safety review"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/june/english": [
-      "Emergency Response",
-      "Fire",
-      "Human Factors",
-      "Management of Change",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/january/english": [
+      "Hazard Identification",
       "Pre-startup safety review",
-      "Safety Culture"
+      "Warning Signs"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/july/english": [
       "Interlocks",
@@ -1500,25 +1500,6 @@
       "Gas Cylinders",
       "Oxygen"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/october/english": [
-      "Fire",
-      "Instrumentation",
-      "Management of Change",
-      "Mechanical Integrity",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/february/english": [
-      "Corrosion",
-      "Management of Change",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/july/english": [
-      "Flexible Connections",
-      "Maintenance",
-      "Management of Change",
-      "Mechanical Integrity",
-      "Piping"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2009/june/english": [
       "Employee Participation",
       "Human Factors",
@@ -1533,6 +1514,13 @@
       "Mechanical Integrity",
       "Piping"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/july/english": [
+      "Flexible Connections",
+      "Maintenance",
+      "Management of Change",
+      "Mechanical Integrity",
+      "Piping"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/september/english": [
       "Emergency Response",
       "Fire",
@@ -1542,16 +1530,34 @@
       "Management of Change",
       "Mechanical Integrity"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2022/february/english": [
+      "Corrosion",
+      "Management of Change",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/october/english": [
+      "Fire",
+      "Instrumentation",
+      "Management of Change",
+      "Mechanical Integrity",
+      "Piping"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/february/english": [
       "Construction",
       "Maintenance",
       "Mechanical Integrity",
       "Piping"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/january/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/may/english": [
       "Corrosion",
+      "Insulation",
       "Leaks and Spills",
       "Maintenance",
+      "Mechanical Integrity",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/august/english": [
+      "Human Factors",
       "Mechanical Integrity",
       "Piping"
     ],
@@ -1562,12 +1568,9 @@
       "Piping",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/august/english": [
-      "Mechanical Integrity",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/may/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/april/english": [
       "Corrosion",
+      "Fire",
       "Insulation",
       "Leaks and Spills",
       "Maintenance",
@@ -1582,14 +1585,20 @@
       "Mechanical Integrity",
       "Piping"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/december/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/june/english": [
+      "Corrosion",
+      "Insulation",
       "Leaks and Spills",
       "Maintenance",
       "Mechanical Integrity",
       "Piping"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/august/english": [
-      "Human Factors",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/april/english": [
+      "Emergency Relief",
+      "Mechanical Integrity",
+      "Piping"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/april/english": [
       "Mechanical Integrity",
       "Piping"
     ],
@@ -1602,9 +1611,16 @@
       "Piping",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/june/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/september/english": [
       "Corrosion",
-      "Insulation",
+      "Employee Participation",
+      "Leaks and Spills",
+      "Mechanical Integrity",
+      "Piping",
+      "Process Safety",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/december/english": [
       "Leaks and Spills",
       "Maintenance",
       "Mechanical Integrity",
@@ -1615,38 +1631,48 @@
       "Flexible Connections",
       "Piping"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/april/english": [
-      "Emergency Relief",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/august/english": [
       "Mechanical Integrity",
       "Piping"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/april/english": [
-      "Mechanical Integrity",
-      "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/april/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/january/english": [
       "Corrosion",
-      "Fire",
-      "Insulation",
       "Leaks and Spills",
       "Maintenance",
       "Mechanical Integrity",
       "Piping"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/september/english": [
-      "Corrosion",
-      "Employee Participation",
-      "Leaks and Spills",
-      "Mechanical Integrity",
-      "Piping",
-      "Process Safety",
-      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/january/english": [
       "Human Factors",
       "Instrumentation",
       "Maintenance",
       "Power failure"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/june/english": [
+      "Chemical Exposure",
+      "Human Factors",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/july/english": [
+      "Emergency Response",
+      "Human Factors",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/october/english": [
+      "Conduct of Operations",
+      "Human Factors",
+      "Safe Work Practices"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/april/english": [
+      "Human Factors",
+      "Process Risk",
+      "Process Safety",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/march/english": [
+      "Employee Participation",
+      "Human Factors",
+      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/june/english": [
       "Asphyxiation",
@@ -1660,27 +1686,6 @@
       "Safety Culture",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/march/english": [
-      "Employee Participation",
-      "Human Factors",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/july/english": [
-      "Emergency Response",
-      "Human Factors",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/april/english": [
-      "Human Factors",
-      "Process Risk",
-      "Process Safety",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/october/english": [
-      "Conduct of Operations",
-      "Human Factors",
-      "Safe Work Practices"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/december/english": [
       "Drums",
       "Employee Participation",
@@ -1692,22 +1697,22 @@
       "Overflow",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/june/english": [
-      "Chemical Exposure",
-      "Human Factors",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/february/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Fire"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/december/english": [
       "Emergency Response",
       "Employee Participation",
       "Fire",
       "Power failure",
       "Process Safety"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2003/february/english": [
+      "Emergency Response",
+      "Employee Participation",
+      "Fire"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/february/english": [
+      "Bonding and Grounding",
+      "Fire",
+      "Static Electricity"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/may/english": [
       "Fire",
@@ -1722,15 +1727,22 @@
       "Leaks and Spills",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/february/english": [
-      "Bonding and Grounding",
-      "Fire",
-      "Static Electricity"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/march/english": [
       "Emergency Relief",
       "Emergency Response",
       "Leaks and Spills"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/march/english": [
+      "Chemical Exposure",
+      "Leaks and Spills",
+      "Maintenance",
+      "Mechanical Integrity",
+      "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/december/english": [
+      "Corrosion",
+      "Leaks and Spills",
+      "Mechanical Integrity"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2004/august/english": [
       "Chlorine",
@@ -1748,11 +1760,6 @@
       "Maintenance",
       "Mechanical Integrity"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/december/english": [
-      "Corrosion",
-      "Leaks and Spills",
-      "Mechanical Integrity"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2011/april/english": [
       "Construction",
       "Corrosion",
@@ -1761,17 +1768,19 @@
       "Mechanical Integrity",
       "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/march/english": [
-      "Chemical Exposure",
-      "Leaks and Spills",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/october/english": [
+      "Employee Participation",
+      "Instrumentation",
       "Maintenance",
       "Mechanical Integrity",
-      "Toxic gas release"
+      "Safety Culture"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/august/english": [
-      "Corrosion",
-      "Insulation",
-      "Mechanical Integrity"
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/october/english": [
+      "Maintenance",
+      "Mechanical Integrity",
+      "Process Risk",
+      "Process Safety",
+      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/january/english": [
       "Corrosion",
@@ -1791,19 +1800,50 @@
       "Permits",
       "Process Safety"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/october/english": [
-      "Employee Participation",
-      "Instrumentation",
-      "Maintenance",
-      "Mechanical Integrity",
-      "Safety Culture"
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/august/english": [
+      "Corrosion",
+      "Insulation",
+      "Mechanical Integrity"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2018/october/english": [
-      "Maintenance",
-      "Mechanical Integrity",
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/january/english": [
+      "Employee Participation",
       "Process Risk",
       "Process Safety",
+      "Safety Culture",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/september/english": [
+      "Employee Participation",
+      "Security"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/february/english": [
+      "Employee Participation",
+      "Process Safety",
+      "Safety Culture",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/november/english": [
+      "Employee Participation",
+      "Safety Culture",
+      "Training"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/april/english": [
+      "Employee Participation",
+      "Process Safety",
       "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/march/english": [
+      "Employee Participation",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/november/english": [
+      "Employee Participation",
+      "Process Safety",
+      "Safety Culture"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/december/english": [
+      "Employee Participation",
+      "Security"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/april/english": [
       "Asphyxiation",
@@ -1814,42 +1854,12 @@
       "Nitrogen",
       "Permits"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/june/english": [
-      "Emergency Response",
-      "Employee Participation",
-      "Training"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2013/january/english": [
       "Employee Participation",
       "Safety Culture",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2005/september/english": [
-      "Employee Participation",
-      "Security"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/november/english": [
-      "Employee Participation",
-      "Process Safety",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2015/january/english": [
-      "Employee Participation",
-      "Process Risk",
-      "Process Safety",
-      "Safety Culture",
-      "Training"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/september/english": [
-      "Employee Participation",
-      "Security"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/april/english": [
-      "Employee Participation",
-      "Process Safety",
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2002/december/english": [
       "Employee Participation",
       "Security"
     ],
@@ -1858,20 +1868,10 @@
       "Safety Culture",
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/november/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/june/english": [
+      "Emergency Response",
       "Employee Participation",
-      "Safety Culture",
       "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2010/february/english": [
-      "Employee Participation",
-      "Process Safety",
-      "Safety Culture",
-      "Training"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2014/march/english": [
-      "Employee Participation",
-      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2019/december/english": [
       "Emergency Response",
@@ -1879,15 +1879,19 @@
       "Process Safety",
       "Security"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/september/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/july/english": [
       "Security"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/july/english": [
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/september/english": [
       "Security"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/december/english": [
       "Tank truck",
       "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/july/english": [
+      "Emergency Response",
+      "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2024/april/english": [
       "Asphyxiation",
@@ -1895,16 +1899,18 @@
       "Nitrogen",
       "Toxic gas release"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/july/english": [
-      "Emergency Response",
-      "Safety Culture"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2020/december/english": [
       "Chemical Exposure",
       "Housekeeping",
       "Reactive Chemistry",
       "Safety Culture",
       "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/december/english": [
+      "Activated Carbon Absorbers",
+      "Hot work permit",
+      "Peroxides",
+      "Reactive Chemistry"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/july/english": [
       "Process Safety",
@@ -1916,12 +1922,6 @@
       "Reactive Chemistry",
       "Safety Culture",
       "Toxic gas release"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2016/december/english": [
-      "Activated Carbon Absorbers",
-      "Hot work permit",
-      "Peroxides",
-      "Reactive Chemistry"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/august/english": [
       "Asphyxiation",
@@ -1950,14 +1950,14 @@
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/april/english": [
       "Training"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/april/english": [
-      "Asphyxiation",
-      "Nitrogen"
-    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2012/june/english": [
       "Asphyxiation",
       "Nitrogen",
       "Toxic gas release"
+    ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/april/english": [
+      "Asphyxiation",
+      "Nitrogen"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/october/english": [
       "Asphyxiation",
@@ -1971,16 +1971,16 @@
       "Beacon Review",
       "Translator Acknowledgement"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/january/english": [
-      "Beacon Review"
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/january/english": [
+      "Beacon Review",
+      "Translator Acknowledgement"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2006/february/english": [
       "Beacon Review",
       "Translator Acknowledgement"
     ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/january/english": [
-      "Beacon Review",
-      "Translator Acknowledgement"
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2007/january/english": [
+      "Beacon Review"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2023/august/english": [
       "Permits"
@@ -1989,15 +1989,15 @@
       "Permits",
       "Shift Change"
     ],
+    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/august/english": [
+      "Process Safety",
+      "Safety Culture"
+    ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/july/english": [
       "Process Safety",
       "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2021/november/english": [
-      "Safety Culture"
-    ],
-    "https://ccps.aiche.org/resources/process-safety-beacon/archives/2008/august/english": [
-      "Process Safety",
       "Safety Culture"
     ],
     "https://ccps.aiche.org/resources/process-safety-beacon/archives/2025/may/english": [

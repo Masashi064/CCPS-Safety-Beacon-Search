@@ -25,3 +25,10 @@ state.json
 # mac/windows
 .DS_Store
 Thumbs.db
+
+tools/.env
+backend/.env
+state.json
+__pycache__/
+.venv/
+

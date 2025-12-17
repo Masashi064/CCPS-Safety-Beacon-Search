@@ -118,7 +118,7 @@ def main():
     name2id: dict[str, int] = {}
     for batch in chunked(keyword_names, 100):
         # PostgREST: name=in.(a,b,c) 形式
-        in_list = ",".join(batch)
+        in_list = ",".join(json.dumps(x) for x in batch)  # "..." でクォートされる
         rows = rest_get(
             supabase_url,
             api_key,

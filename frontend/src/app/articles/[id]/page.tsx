@@ -1,8 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+
+// pdf.js viewer (client-only)
+const PdfPreview = dynamic(() => import("../../../components/PdfPreview"), {
+  ssr: false,
+});
 
 function escapeRegExp(s: string) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -18,64 +24,64 @@ function getHighlightTerms(q: string) {
 
 function HighlightedText({ text, query }: { text: string; query: string }) {
   const terms = useMemo(() => getHighlightTerms(query), [query]);
-  if (!terms.length) return <>{text}</>;
 
-  const pattern = new RegExp(`(${terms.map(escapeRegExp).join("|")})`, "gi");
-  const parts = text.split(pattern);
+  if (!query || terms.length === 0) return <>{text}</>;
+
+  const re = new RegExp(`(${terms.map(escapeRegExp).join("|")})`, "ig");
+  const parts = text.split(re);
 
   return (
     <>
       {parts.map((p, i) => {
         const hit = terms.some((t) => p.toLowerCase() === t.toLowerCase());
-        return hit ? (
-          <mark key={i} className="rounded px-1">
+        if (!hit) return <span key={i}>{p}</span>;
+        return (
+          <mark
+            key={i}
+            className="rounded px-1 py-0.5 bg-yellow-400/30 text-yellow-200"
+          >
             {p}
           </mark>
-        ) : (
-          <span key={i}>{p}</span>
         );
       })}
     </>
   );
 }
 
+type Article = {
+  id: number;
+  title: string;
+  created_at: string;
+  content: string | null;
+
+  published_year: number | null;
+  published_month: number | null;
+
+  source_page_url: string | null;
+  source_pdf_url: string | null;
+
+  pdf_bucket: string | null;
+  pdf_path: string | null;
+
+  keywords: string[];
+};
+
 type ApiResponse = {
-  article: {
-    id: number;
-    title: string;
-    created_at: string;
-    content: string;
-    excerpt: string;
-
-    published_year: number | null;
-    published_month: string | null;
-
-    source_page_url: string | null;
-    source_pdf_url: string | null;
-
-    pdf_bucket: string | null;
-    pdf_path: string | null;
-    pdf_public_url: string | null;
-    has_pdf: boolean;
-
-    // ★追加
-    keywords: string[];
-  };
-  nav: {
+  article: Article;
+  nav?: {
     newerId: number | null;
     olderId: number | null;
   };
 };
-
 
 function getIdFromPath(pathname: string) {
   const m = pathname.match(/^\/articles\/([^/]+)$/);
   return m?.[1] ?? null;
 }
 
-function formatPublished(y: number | null, m: string | null) {
+function formatPublished(y: number | null, m: number | null) {
   if (!y && !m) return null;
-  if (y && m) return `${y} / ${m}`;
+  if (y && m) return `${y} / ${String(m).padStart(2, "0")}`;
   if (y) return String(y);
   return String(m);
 }
@@ -98,9 +104,6 @@ export default function ArticlePage() {
       return;
     }
 
-    const idSafe = id;
-    const qSafe = q ?? "";
-
     const controller = new AbortController();
 
     async function run() {
@@ -108,68 +111,78 @@ export default function ArticlePage() {
       setErr(null);
 
       try {
-        const url = qSafe
-          ? `/api/articles/${encodeURIComponent(idSafe)}?q=${encodeURIComponent(qSafe)}`
-          : `/api/articles/${encodeURIComponent(idSafe)}`;
+        const url = q
+          ? `/api/articles/${encodeURIComponent(id)}?q=${encodeURIComponent(q)}`
+          : `/api/articles/${encodeURIComponent(id)}`;
 
         const res = await fetch(url, { signal: controller.signal });
 
-        const text = await res.text();
+        const raw = await res.text();
         let json: any = null;
         try {
-          json = text ? JSON.parse(text) : null;
-        } catch {}
+          json = raw ? JSON.parse(raw) : null;
+        } catch {
+          // ignore
+        }
 
         if (!res.ok) {
           const msg =
-            json?.error ??
-            `HTTP ${res.status} ${res.statusText}: ${text.slice(0, 200) || "(empty response)"}`;
+            json?.error ||
+            json?.message ||
+            raw ||
+            `Request failed: ${res.status}`;
           throw new Error(msg);
         }
-        if (!json) throw new Error("API returned empty/non-JSON response.");
 
-        setData(json);
+        setData(json as ApiResponse);
       } catch (e: any) {
-        // ✅ これが肝：abort は「正常動作」なので無視
+        // ✅ AbortError は通常の挙動なのでエラー表示しない
         if (e?.name === "AbortError") return;
-        setErr(e?.message ?? "Unknown error");
+        setErr(e?.message ?? String(e));
+        setData(null);
       } finally {
         setLoading(false);
       }
     }
 
-    void run();
-
-    return () => {
-      if (!controller.signal.aborted) controller.abort();
-    };
+    run();
+    return () => controller.abort();
   }, [id, q]);
 
+  const article = data?.article ?? null;
 
+  const publishedText = useMemo(() => {
+    if (!article) return null;
+    return formatPublished(article.published_year, article.published_month);
+  }, [article]);
 
-  const backHref = q ? `/?q=${encodeURIComponent(q)}` : "/";
+  const pdfProxyUrl = useMemo(() => {
+    if (!article?.id) return null;
+    // pdf route will 404 if pdf is missing — that's fine.
+    return `/api/articles/${article.id}/pdf`;
+  }, [article?.id]);
 
-  const newerHref =
-    data?.nav.newerId != null
-      ? `/articles/${data.nav.newerId}${q ? `?q=${encodeURIComponent(q)}` : ""}`
-      : null;
+  const newerHref = useMemo(() => {
+    const newerId = data?.nav?.newerId ?? null;
+    if (!newerId) return null;
+    return q
+      ? `/articles/${newerId}?q=${encodeURIComponent(q)}`
+      : `/articles/${newerId}`;
+  }, [data?.nav?.newerId, q]);
 
-  const olderHref =
-    data?.nav.olderId != null
-      ? `/articles/${data.nav.olderId}${q ? `?q=${encodeURIComponent(q)}` : ""}`
-      : null;
-
-  const publishedText = data ? formatPublished(data.article.published_year, data.article.published_month) : null;
-  const sourceUrl = data?.article.source_page_url ?? null;
-  const pdfPublicUrl = data?.article.pdf_public_url ?? null;
-
-  // PCで埋め込み表示する用（自サイトのAPI経由にする想定）
-  const pdfEmbedUrl = data?.article.has_pdf ? `/api/articles/${data.article.id}/pdf` : null;
+  const olderHref = useMemo(() => {
+    const olderId = data?.nav?.olderId ?? null;
+    if (!olderId) return null;
+    return q
+      ? `/articles/${olderId}?q=${encodeURIComponent(q)}`
+      : `/articles/${olderId}`;
+  }, [data?.nav?.olderId, q]);
 
   return (
-    <main className="max-w-4xl mx-auto p-6 space-y-6">
+    <main className="max-w-4xl mx-auto p-4 space-y-4">
+      {/* Top bar */}
       <div className="flex items-center justify-between gap-3">
-        <Link className="underline opacity-80 hover:opacity-100" href={backHref}>
+        <Link className="border rounded px-3 py-2" href={q ? `/?q=${encodeURIComponent(q)}` : "/"}>
           ← Back
         </Link>
 
@@ -192,52 +205,58 @@ export default function ArticlePage() {
         </div>
       </div>
 
-      {loading && <p>Loading...</p>}
+      {loading && <p>Loading…</p>}
       {err && <p className="text-red-600">Error: {err}</p>}
 
-      {data && (
+      {article && (
         <div className="space-y-4">
-          <h1 className="text-2xl font-bold">{data.article.title}</h1>
+          <header className="space-y-2">
+            <h1 className="text-2xl font-bold">
+              <HighlightedText text={article.title} query={q} />
+            </h1>
 
-          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs opacity-70">
-            <span>{new Date(data.article.created_at).toLocaleString()}</span>
-            {publishedText && <span>Published: {publishedText}</span>}
-            {data.article.has_pdf && <span>PDF: available</span>}
-          </div>
-
-          {data.article.source_page_url && (
-            <div className="text-sm">
-              Source page:{" "}
-              <a
-                className="underline opacity-80 hover:opacity-100"
-                href={data.article.source_page_url}
-                target="_blank"
-                rel="noreferrer"
-              >
-                open
-              </a>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs opacity-70">
+              <span>Indexed: {new Date(article.created_at).toLocaleString()}</span>
+              {publishedText && <span>Published: {publishedText}</span>}
             </div>
-          )}
 
-          {data.article.keywords?.length > 0 && (
-            <div className="flex flex-wrap gap-2">
-              {data.article.keywords.map((kw) => (
-                <span key={kw} className="text-xs border rounded-full px-2 py-1 opacity-80">
-                  {kw}
-                </span>
-              ))}
-            </div>
-          )}
-         
-          {/* Attachments */}
-          <section className="space-y-2 pt-4">
+            {article.source_page_url && (
+              <div className="text-sm">
+                Source page:{" "}
+                <a
+                  className="underline opacity-80 hover:opacity-100"
+                  href={article.source_page_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  open
+                </a>
+              </div>
+            )}
+
+            {article.keywords?.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {article.keywords.map((kw) => (
+                  <span
+                    key={kw}
+                    className="text-xs border rounded-full px-2 py-1 opacity-80"
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            )}
+          </header>
+
+          {/* ✅ PDF first */}
+          <section className="space-y-3 pt-2">
             <div className="flex items-center justify-between gap-2">
-              <h2 className="text-sm font-semibold opacity-80">Attachments</h2>
+              <h2 className="text-sm font-semibold opacity-80">PDF</h2>
 
-              {pdfEmbedUrl && (
+              {pdfProxyUrl && (
                 <button
                   type="button"
-                  className="hidden md:inline-flex text-xs border rounded px-2 py-1 opacity-80 hover:opacity-100"
+                  className="text-xs border rounded px-2 py-1 opacity-80 hover:opacity-100"
                   onClick={() => setShowPdf((v) => !v)}
                 >
                   {showPdf ? "Hide preview" : "Show preview"}
@@ -246,35 +265,53 @@ export default function ArticlePage() {
             </div>
 
             <div className="flex flex-wrap gap-2">
-              {sourceUrl && (
-                <a className="border rounded px-3 py-2" href={sourceUrl} target="_blank" rel="noreferrer">
+              {article.source_page_url && (
+                <a
+                  className="border rounded px-3 py-2 text-sm"
+                  href={article.source_page_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View source page
                 </a>
               )}
 
-              {/* PC convenience */}
-              {pdfPublicUrl && (
-                <a className="hidden md:inline-flex border rounded px-3 py-2" href={pdfPublicUrl} target="_blank" rel="noreferrer">
+              {/* Use your stored source_pdf_url if available */}
+              {article.source_pdf_url && (
+                <a
+                  className="border rounded px-3 py-2 text-sm"
+                  href={article.source_pdf_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Open PDF
                 </a>
               )}
             </div>
-            
-            {/* Desktop embed */}
-            {pdfEmbedUrl && showPdf && (
-              <div className="hidden md:block w-full aspect-[210/297] border rounded overflow-hidden bg-black/5">
-                <iframe title="PDF Viewer" src={pdfEmbedUrl} className="w-full h-full" />
+
+            {pdfProxyUrl && showPdf ? (
+              <div className="w-full border rounded overflow-hidden bg-black/5 p-2">
+                <PdfPreview fileUrl={pdfProxyUrl} />
+              </div>
+            ) : (
+              <div className="text-sm opacity-80">
+                PDF preview is not available for this article.
               </div>
             )}
-
           </section>
 
-          <article className="prose prose-invert max-w-none">
-            <pre className="whitespace-pre-wrap text-sm">{data.article.content}</pre>
-          </article>
+          {/* ✅ Body after PDF */}
+          <section className="space-y-2 pt-2">
+            <h2 className="text-sm font-semibold opacity-80">Article</h2>
+
+            <article className="prose prose-invert max-w-none">
+              <pre className="whitespace-pre-wrap text-sm">
+                <HighlightedText text={article.content ?? ""} query={q} />
+              </pre>
+            </article>
+          </section>
         </div>
       )}
-
     </main>
   );
 }

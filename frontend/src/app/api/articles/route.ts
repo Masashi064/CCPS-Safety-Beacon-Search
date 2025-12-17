@@ -9,6 +9,40 @@ function getTerms(q: string) {
     .filter(Boolean);
 }
 
+function monthToNumber(m: unknown) {
+  if (m == null) return 0;
+  if (typeof m === "number") return m >= 1 && m <= 12 ? m : 0;
+
+  const s = String(m).trim().toLowerCase();
+  if (!s) return 0;
+
+  const n = Number(s);
+  if (Number.isFinite(n)) return n >= 1 && n <= 12 ? Math.floor(n) : 0;
+
+  const map: Record<string, number> = {
+    jan: 1, january: 1,
+    feb: 2, february: 2,
+    mar: 3, march: 3,
+    apr: 4, april: 4,
+    may: 5,
+    jun: 6, june: 6,
+    jul: 7, july: 7,
+    aug: 8, august: 8,
+    sep: 9, sept: 9, september: 9,
+    oct: 10, october: 10,
+    nov: 11, november: 11,
+    dec: 12, december: 12,
+  };
+  return map[s] ?? 0;
+}
+
+function publishedKey(y: unknown, m: unknown) {
+  const yy = typeof y === "number" ? y : Number(y);
+  const year = Number.isFinite(yy) ? yy : 0;
+  return year * 100 + monthToNumber(m); // 例: 202512
+}
+
+
 function buildExcerpt(content: string, q: string, radius = 180) {
   const text = content ?? "";
   const terms = getTerms(q);
@@ -53,14 +87,16 @@ export async function GET(req: Request) {
     .map((v) => v.trim())
     .filter(Boolean);
 
-  // まず記事テーブルへのクエリを組む
+  const fetchLimit = Math.min(limit * 10, 500);
+
   let query = supabase
     .from("ccps_chaser_articles")
     .select(
       "id,title,content,created_at,published_year,published_month,source_page_url,source_pdf_url,pdf_bucket,pdf_path"
     )
-    .order("created_at", { ascending: false })
-    .order("id", { ascending: false })
+    .order("published_year",  { ascending: false, nullsFirst: false })
+    .order("published_month", { ascending: false, nullsFirst: false })
+    .order("id",              { ascending: false })
     .limit(limit);
 
   // ✅ タグで絞り込み（kw がある場合）
@@ -164,6 +200,16 @@ export async function GET(req: Request) {
       keywords: keywordsByArticle[a.id] ?? [],
     };
   });
+
+  items.sort((a: any, b: any) => {
+    const ka = publishedKey(a.published_year, a.published_month);
+    const kb = publishedKey(b.published_year, b.published_month);
+    if (ka !== kb) return kb - ka; // ✅ 新しい順
+    return (b.id ?? 0) - (a.id ?? 0);
+  });
+
+  return NextResponse.json({ items: items.slice(0, limit) });
+
 
   return NextResponse.json({ items });
 }
